@@ -1,19 +1,21 @@
 import React from 'react';
 import { FiAlertOctagon } from 'react-icons/fi';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData, useNavigate, useParams } from 'react-router';
 import Button from '../../components/ui/Button';
 import { addAppointToLocalStorage } from '../../utils/localStorage';
 import SpecificError from '../../components/SpecificError';
+import toast from 'react-hot-toast';
 
 
 const ViewDetails = () => {
+    const navigate = useNavigate()
     const lawyersData = useLoaderData()
     const { lawyerLicense } = useParams()
     // finding single lawyer data 
     const findLawyer = lawyersData.find(lawyer => lawyer.license === lawyerLicense)
     const { id, image, name, speciality, license, experience, availability, fees } = findLawyer || {}
     if (!findLawyer) {
-        return <SpecificError lawyerLicense={lawyerLicense}/>
+        return <SpecificError lawyerLicense={lawyerLicense} />
     }
 
     // added today date for available or unavailable
@@ -23,8 +25,12 @@ const ViewDetails = () => {
     // set to local storage handle click function 
     const handleBookAnAppoint = (id) => {
         // store data with id 
-        addAppointToLocalStorage(id)
-
+        const isAdded = addAppointToLocalStorage(id)
+        if (isAdded) {
+            toast.success(`Appoint Schedule for ${name} Successfully`)
+            navigate('/my-bookings')
+        }
+        else toast.error(`${name} is already added!`);
     }
     return (
         <div className='mb-12 mt-2 space-y-6'>

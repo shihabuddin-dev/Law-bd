@@ -12,13 +12,15 @@ export const getStoreAppoint = () => {
 export const addAppointToLocalStorage = (id) => {
     const storedAppointData = getStoreAppoint()
     if (storedAppointData.includes(id)) {
-        toast.error('Already Added!')
+        // toast.error('Already Added!')
+        return false;
     }
     else {
         storedAppointData.push(id)
         const data = JSON.stringify(storedAppointData)
         localStorage.setItem('appoint', data)
-        toast.success('Appointment has been booked')
+        // toast.success('Appointment has been booked')
+        return true
     }
 }
 
