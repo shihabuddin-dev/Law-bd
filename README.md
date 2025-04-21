@@ -15,6 +15,7 @@
 - 🧩 **React Icons** for rich iconography
 - 📊 **Recharts** to visualize legal statistics and data
 - 🎨 **Kometa (Kitwind)** components for sleek layout and UI blocks
+- 🎨 **React Countup** Counter number
 
 ---
 
@@ -29,6 +30,7 @@
 | React Icons        | Icon library with popular icon sets               |
 | Recharts           | Charting library for visualizing data             |
 | Kitwind (Kometa)   | Pre-built Tailwind UI component library           |
+| React Countup      | Counter number                                    |
 
 ---
 
