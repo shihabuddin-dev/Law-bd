@@ -1,0 +1,28 @@
+[
+    {
+      "question": "What is useState and how does it work in React?",
+      "answer": "useState is a React Hook that allows you to add state to functional components. It returns an array with two elements: the current state value and a function to update it. When you call the update function, React re-renders the component with the new state value.",
+      "date": "2025-04-21"
+    },
+    {
+      "question": "What is the purpose of useEffect in React?",
+      "answer": "useEffect is a React Hook that allows you to run side effects in functional components, such as data fetching, subscriptions, or manually changing the DOM. It runs after the component renders and can also return a cleanup function to avoid memory leaks.",
+      "date": "2025-04-23"
+    },
+    {
+      "question": "Difference between controlled and uncontrolled components. Which one is better?",
+      "answer": "Controlled components are form elements whose values are managed by React state, while uncontrolled components store their own state internally using refs. Controlled components offer more control and are easier to validate and test, making them generally the better choice for complex forms.",
+      "date": "2025-04-22"
+    },
+    {
+      "question": "Tell us something about useFormStatus() in React.",
+      "answer": "useFormStatus() is a Hook introduced in React to access the status of a form submission in a server action. It provides useful metadata like whether a form is currently pending (submitting), allowing developers to show loading indicators or disable buttons during submission.",
+      "date": "2025-04-22"
+    },
+    {
+      "question": "What is the Virtual DOM in React and why is it important?",
+      "answer": "The Virtual DOM is a lightweight in-memory representation of the actual DOM in React. It allows React to efficiently update the UI by computing the difference (diffing) between the new Virtual DOM and the previous one, and only applying the necessary changes to the real DOM, improving performance.",
+      "date": "2025-04-21"
+    }
+  ]
+  

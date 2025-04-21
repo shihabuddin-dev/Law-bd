@@ -1,12 +1,60 @@
-# React + Vite
+# ⚖️ Law BD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Law BD** is a modern, responsive legal service web application built with React and Tailwind CSS. It showcases legal services, features, and statistics using elegant UI components and interactive charts. This project is perfect for law firms, legal professionals, or any organization in the legal industry seeking a professional online presence.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [https://law-bd-pro.netlify.app](https://law-bd-pro.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ Built with **React** for a fast and modular user experience
+- 🧭 **React Router** for seamless navigation between pages
+- 💨 **Tailwind CSS** for modern and responsive UI styling
+- 🔔 **React Hot Toast** for smooth toast notifications
+- 🧩 **React Icons** for rich iconography
+- 📊 **Recharts** to visualize legal statistics and data
+- 🎨 **Kometa (Kitwind)** components for sleek layout and UI blocks
+
+---
+
+## 🚀 Technologies Used
+
+| Technology         | Description                                       |
+|--------------------|---------------------------------------------------|
+| React              | JavaScript library for building UIs               |
+| React Router       | Declarative routing for React apps                |
+| Tailwind CSS       | Utility-first CSS framework                       |
+| React Hot Toast    | Lightweight and customizable toast notifications  |
+| React Icons        | Icon library with popular icon sets               |
+| Recharts           | Charting library for visualizing data             |
+| Kitwind (Kometa)   | Pre-built Tailwind UI component library           |
+
+---
+
+## 📁 Project Structure
+
+
+
+---
+
+## 📷 Screenshots
+
+> (Add screenshots here or link to externally hosted images.)
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your system
+
+### Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/law-bd.git
+cd law-bd
+
