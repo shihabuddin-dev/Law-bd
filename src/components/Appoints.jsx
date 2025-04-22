@@ -18,7 +18,7 @@ const Appoints = ({ lawyerAppoint, handleDelete }) => {
                 <hr className='border-t-2 border-gray-200 border-dashed w-full ' />
                 <div className='mt-5 grid ' >
                     <button onClick={() => handleDelete(id)}
-                        className='border-red-400 border-2 rounded-2xl py-1 text-red-600 cursor-pointer hover:bg-red-500 duration-900 hover:text-white'>Chancel Appointment</button>
+                        className='border-red-400 border-2 rounded-2xl py-1 text-red-600 cursor-pointer hover:bg-red-500 duration-900 hover:text-white'>Cancel Appointment</button>
                 </div>
             </div>
         </div>
