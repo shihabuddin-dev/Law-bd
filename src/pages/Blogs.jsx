@@ -12,7 +12,7 @@ const Blogs = () => {
                 <p className='text-gray-800'>Explore dynamic question and answer related to the programming concept like React and React Router...
                 </p>
             </div>
-           <div className='mt-6'>
+           <div className='mt-4'>
            {
                 blogs.map((blog,i) => <Blog key={i} blog={blog} />)
             }

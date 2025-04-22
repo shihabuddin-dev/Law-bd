@@ -1,11 +1,9 @@
 import React from 'react';
 import Header from './Header';
 import Button from '../components/ui/Button';
-import { Link, useRouteError } from 'react-router';
+import { Link } from 'react-router';
 
 const ErrorPage = () => {
-    const error = useRouteError()
-    console.log(error)
 
     return (
         <div>

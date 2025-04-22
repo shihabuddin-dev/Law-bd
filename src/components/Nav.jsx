@@ -13,7 +13,7 @@ const Nav = () => {
         <NavLink to='/about-us'>About Us</NavLink>
     </div>
     return (
-        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-6 lg:px-8">
+        <div className="container mx-auto px-4 py-5  md:px-6 lg:px-12">
             <div className="relative flex items-center justify-between">
                 <Link className="inline-flex items-center">
                     <img className='w-10' src={logo} alt="logo" />

@@ -14,7 +14,6 @@ const Home = () => {
         if (text === '') return setLawyers(data)
         const searchLawyers = data.filter(lawyer => lawyer.name.toLowerCase().includes(text.toLowerCase()) || lawyer.speciality.toLowerCase().includes(text.toLowerCase()))
         setLawyers(searchLawyers)
-        console.log(searchLawyers)
     }
     return (
         <div>

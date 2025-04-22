@@ -24,6 +24,11 @@ const ViewDetails = () => {
 
     // set to local storage handle click function 
     const handleBookAnAppoint = (id) => {
+        // button will enable or disabled based on lawyer schedule (day) 
+        if (!isAvailable) {
+            toast.error(`${name} is Unavailable today please try another day`)
+            return
+        }
         // store data with id 
         const isAdded = addAppointToLocalStorage(id)
         if (isAdded) {
@@ -31,6 +36,7 @@ const ViewDetails = () => {
             navigate('/my-bookings')
         }
         else toast.error(`${name} is already added!`);
+
     }
     return (
         <div className='mb-12 mt-2 space-y-6'>
@@ -75,8 +81,11 @@ const ViewDetails = () => {
                         <FiAlertOctagon className='text-lg' /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</button>
                     <div className='mt-5 grid' >
                         <Button
+                        className={`${!isAvailable&& 'bg-[#FFA000] hover:bg-amber-300'}`}
                             onClick={() => handleBookAnAppoint(id)}
                             label={isAvailable ? 'Book Appointment Now' : 'UnAvailable'} />
+
+                    
                     </div>
                 </div>
             </div>
